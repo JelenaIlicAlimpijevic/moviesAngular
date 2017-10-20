@@ -1,5 +1,4 @@
-export class Examples {
-	private examples = [
+export const examples = [
     {
       id: 1,
       name: "It",  
@@ -28,5 +27,4 @@ export class Examples {
       genres: ["thriller", "drama"]
     }
    
-  ];]
-}
+  ];
