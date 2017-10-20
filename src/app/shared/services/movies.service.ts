@@ -11,16 +11,20 @@ export class MoviesService {
 	getMovies(){
 		
 	return new Observable((o:Observer<any>)=>{
-   	  const movie=examples.map(example=>new Movie(example.id, 
-   	  												example.name, 
-   	  												example.director,
-   	  												example.imageUrl,
-   	  												example.duration,
-   	  												example.releaseDate,
-   	  												example.genres
-												));
-      o.next(movie);
-  });
+   	  let movie=examples.map(example=>{
+         console.log(example);
+        return new Movie(1,'2','3','4',5,'6'
+                  // example.id, 
+   	  												// example.name, 
+   	  												// example.director,
+   	  												// example.imageUrl,
+   	  												// example.duration,
+   	  												// example.releaseDate,
+   	  												// example.genres
+												)});
+      // o.next(movie); console.log(examples);
+      console.log(movie);
+  }); 
 }
   
 

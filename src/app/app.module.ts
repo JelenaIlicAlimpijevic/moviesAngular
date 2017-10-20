@@ -6,6 +6,10 @@ import {MoviesService} from './shared/services/movies.service';
 import { AppComponent } from './app.component';
 import { LayoutComponent } from './components/layout/layout.component';
 import { MoviesComponent } from './components/movies/movies.component';
+import { MovieRowComponent } from './components/movie-row/movie-row.component';
+import {SharedModule} from './shared/shared.module';
+import { SearchComponent } from './components/search/search.component';
+import {SearchModule} from './shared/search.module';
 
 const appRoutes:Routes=[
 {path:'', component: MoviesComponent}]
@@ -14,10 +18,14 @@ const appRoutes:Routes=[
   declarations: [
     AppComponent,
     LayoutComponent,
-    MoviesComponent
-  ],
+    MoviesComponent,
+    SearchComponent
+    ],
+   
   imports: [
+    SearchModule,
     BrowserModule,
+    SharedModule,
     RouterModule.forRoot(appRoutes)
   ],
 
