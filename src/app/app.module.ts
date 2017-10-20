@@ -10,6 +10,7 @@ import { MovieRowComponent } from './components/movie-row/movie-row.component';
 import {SharedModule} from './shared/shared.module';
 import { SearchComponent } from './components/search/search.component';
 import {SearchModule} from './shared/search.module';
+import { SearchPageComponent } from './components/search-page/search-page.component';
 
 const appRoutes:Routes=[
 {path:'', component: MoviesComponent}]
@@ -19,7 +20,8 @@ const appRoutes:Routes=[
     AppComponent,
     LayoutComponent,
     MoviesComponent,
-    SearchComponent
+    SearchComponent,
+    SearchPageComponent
     ],
    
   imports: [

@@ -1,12 +1,12 @@
 export class Movie {
 
-	constructor (id?:number,
-				 name?:string, 
-				 director?:string,
-				 imageUrl?:string,
-				 duration?:number,
-				 releaseDate?:string,
-				 genres?:string[]){
+	constructor (private id?:number,
+				 private name?:string, 
+				 private director?:string,
+				 private imageUrl?:string,
+				 private duration?:number,
+				 private releaseDate?:string,
+				 private genres?:string[]){
 		
 	}
 }
